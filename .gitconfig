@@ -1,0 +1,27 @@
+[user]
+	name = Astrick
+	email = astrick.harren.at.work@gmail.com
+[core]
+ autocrlf = input
+[filter "lfs"]
+ clean = git-lfs clean -- %f
+ smudge = git-lfs smudge -- %f
+ process = git-lfs filter-process
+ required = true
+
+[alias]
+ lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+ co = checkout
+ cm = commit
+ br = branch
+ st = status
+    dif = diff --word-diff
+    dif-file = diff --name-only
+
+[diff]
+    tool = vimdiff
+[merge]
+    tool = vimdiff
+    conflictstyle = diff3
+[mergetool "vimdiff"]
+    cmd = nvim -d $BASE $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
