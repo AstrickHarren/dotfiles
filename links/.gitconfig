@@ -49,8 +49,6 @@
 	line-numbers-right-format = "{np:^4}│ "
 [gitflow "prefix"]
 	versiontag = v
-[sequence]
-	editor = interactive-rebase-tool
 [alias]
 	a = add --all
 	ai = add -i
@@ -255,3 +253,5 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[credential]
+	helper = "!f() { /home/vscode/.vscode-server/bin/c722ca6c7eed3d7987c0d5c3df5c45f6b15e77d1/node /tmp/vscode-remote-containers-02057f5db3015da6250a3dcd8d803a5a33e37fc2.js $*; }; f"
