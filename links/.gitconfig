@@ -165,6 +165,7 @@
 	rba = rebase --abort
 	rbc = rebase --continue
 	rbi = rebase --interactive
+	rbih = "!f() { git rebase -i HEAD~$1; }; f"
 	rbs = rebase --skip
 	#############
 	re = reset
@@ -172,9 +173,9 @@
 	reh = reset --hard
 	rem = reset --mixed
 	res = reset --soft
-	rehh = reset --hard HEAD
-	remh = reset --mixed HEAD
-	resh = reset --soft HEAD
+	rehh = "!f() { git reset --hard HEAD~$1; }; f"
+	remh = "!f() { git reset --mixed HEAD~$1; }; f"
+	resh = "!f() { git reset --soft HEAD~$1; }; f"
 	rehom = reset --hard origin/master
 	#############
 	r = remote
