@@ -215,6 +215,7 @@
 	w = show
 	wp = show -p
 	wr = show -p --no-color
+	ws = show --stat
 	#############
 	svnr = svn rebase
 	svnd = svn dcommit
