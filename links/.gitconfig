@@ -220,6 +220,9 @@
 	t = tag
 	td = tag -d
 	#############
+	u = restore
+	us = restore --staged
+	#############
 	w = show
 	wp = show -p
 	wr = show -p --no-color
