@@ -50,7 +50,8 @@
 [gitflow "prefix"]
 	versiontag = v
 [alias]
-	a = add --all
+	a = add
+	aa = add -all
 	ai = add -i
 	#############
 	ap = apply
