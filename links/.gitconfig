@@ -71,12 +71,16 @@
 	#############
 	c = commit
 	ca = commit -a
+	cv = commit -v
+	cav = commit -av
 	cm = commit -m
 	cam = commit -am
 	cem = commit --allow-empty -m
 	cd = commit --amend
+	cdv = commit --amend -v
 	cdn = commit --amend --no-edit
 	cad = commit -a --amend
+	cadv = commit -a --amend -v
 	cadn = commit -a --amend --no-edit
 	ced = commit --allow-empty --amend
 	#############
