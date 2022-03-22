@@ -54,10 +54,7 @@
 	a = add
 	aa = add -all
 	ai = add -i
-	#############
-	ap = apply
-	as = apply --stat
-	ac = apply --check
+	ap = add -p
 	#############
 	ama = am --abort
 	amr = am --resolved
