@@ -117,6 +117,7 @@
 	lls = log --oneline --stat
 	lg = log --oneline --graph --decorate
 	lgs = log --oneline --graph --decorate --stat
+	lgl = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	#############
 	lsf = !git ls-files | grep -i
 	#############
