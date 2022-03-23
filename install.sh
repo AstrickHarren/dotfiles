@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env zsh
 # from https://github.com/chrmarti/dotfiles/blob/master/install.sh
 
 FOLDER=$(cd `dirname $0` && pwd)
