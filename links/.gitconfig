@@ -52,7 +52,7 @@
 	versiontag = v
 [alias]
 	a = add
-	aa = add -all
+	aa = add --all
 	ai = add -i
 	ap = add -p
 	#############
