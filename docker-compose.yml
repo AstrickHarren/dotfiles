@@ -1,7 +1,9 @@
 version: "3.9"
 services:
   alpine:
-    image: "alpine"
+    build: 
+      context: ./dockerfiles
+      dockerfile: alpine
     volumes: 
       - /run/host-services/ssh-auth.sock:/ssh-agent
     environment:
