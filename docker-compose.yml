@@ -7,11 +7,11 @@ services:
     volumes: 
       - /run/host-services/ssh-auth.sock:/ssh-agent
     environment:
-      - SSH_AUTH_SOCK='/ssh-agent'
+      - SSH_AUTH_SOCK=/ssh-agent
 
   ubuntu:
     image: "ubuntu:20.04"
     volumes: 
       - /run/host-services/ssh-auth.sock:/ssh-agent
     environment:
-      - SSH_AUTH_SOCK='/ssh-agent'
+      - SSH_AUTH_SOCK=/ssh-agent
