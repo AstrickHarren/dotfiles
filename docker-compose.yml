@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  alpine:
+    image: "alpine"
+    volumes: 
+      - /run/host-services/ssh-auth.sock:/ssh-agent
+    environment:
+      - SSH_AUTH_SOCK='/ssh-agent'
