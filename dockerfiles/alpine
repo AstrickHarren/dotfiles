@@ -3,4 +3,4 @@ FROM alpine
 WORKDIR "root"
 RUN apk update && apk add git openssh
 RUN git clone https://github.com/AstrickHarren/dotfiles.git
-RUN ./dotfiles/alpine-install.sh
+RUN ./dotfiles/install.sh alpine
