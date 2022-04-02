@@ -1,5 +1,11 @@
 # apt origins
-sudo apt update
+apt update
+
+# install neovim
+apt install software-properties-common
+add-apt-repository ppa:neovim-ppa/stable
+apt-get update
+apt-get install neovim
 
 # HACK: installing delta pager 0.12.1
 DELTA='delta-0.12.1-aarch64-unknown-linux-gnu'
