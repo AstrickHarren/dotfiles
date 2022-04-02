@@ -5,9 +5,15 @@ case $1 in
   alpine)
     $FOLDER/installs/alpine.sh
     ;;
+  ubuntu)
+    $FOLDER/installs/ubuntu.sh
+    ;;
   *)
     echo "unknown img name, skipping img prefered installs"
 esac
 
 # link files
 $FOLDER/link.sh $FOLDER
+
+# installing astro vim
+git clone https://github.com/kabinspace/AstroVim ~/.config/nvim
