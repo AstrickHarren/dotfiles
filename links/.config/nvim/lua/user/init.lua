@@ -51,6 +51,13 @@ local config = {
       -- },
     },
     -- All other entries override the setup() call for default plugins
+    cmp = {
+      sources = {
+        { name = "nvim_lsp" },
+        { name = "luasnip" },
+        { name = "path" },
+      },
+    },
     treesitter = {
       ensure_installed = { "lua" },
     },
@@ -77,7 +84,8 @@ local config = {
   ["which-key"] = {
     -- Add bindings to the normal mode <leader> mappings
     register_n_leader = {
-      -- ["N"] = { "<cmd>tabnew<cr>", "New Buffer" },
+      [","] = { "<cmd>e ~/.config/nvim/lua/user/init.lua<cr>", "User Perferences" },
+      ["<leader>ll"] = { "<cmd>LspInstall<cr>", "User Perferences" },
     },
   },
 
