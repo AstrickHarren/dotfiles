@@ -1,0 +1,5 @@
+FROM rust
+
+WORKDIR "root"
+RUN git clone https://github.com/AstrickHarren/dotfiles.git
+RUN ./dotfiles/install.sh ubuntu

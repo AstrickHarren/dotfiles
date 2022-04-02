@@ -15,3 +15,13 @@ services:
       - /run/host-services/ssh-auth.sock:/ssh-agent
     environment:
       - SSH_AUTH_SOCK=/ssh-agent
+
+  rust:
+    build:
+      dockerfile: dockerfiles/rust
+    volumes: 
+      - /run/host-services/ssh-auth.sock:/ssh-agent
+    environment:
+      - SSH_AUTH_SOCK=/ssh-agent
+
+
