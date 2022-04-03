@@ -15,5 +15,7 @@ esac
 # link files
 $FOLDER/link.sh $FOLDER
 
+
 # installing astro vim
+rm -r ~/.config/nvim
 git clone https://github.com/kabinspace/AstroVim ~/.config/nvim
