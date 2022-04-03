@@ -6,7 +6,7 @@ do
 		echo Linking $f to $HOME/$f
 
     if [ ! -d `dirname $HOME/$f` ]; then
-      mkdir `dirname $HOME/$f`
+      mkdir -p `dirname $HOME/$f`
     fi
       
 		ln -s $HOME/`basename $FOLDER`/links/$f `dirname $FOLDER`/$f
