@@ -65,6 +65,7 @@
 	bd = branch -d
 	bdd = branch -D
 	br = branch -r
+	bm = branch -m
 	bc = rev-parse --abbrev-ref HEAD
 	bu = !git rev-parse --abbrev-ref --symbolic-full-name "@{u}"
 	bs = !git-branch-status
@@ -267,3 +268,5 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[credential]
+	helper = "!f() { /home/vscode/.vscode-server/bin/dfd34e8260c270da74b5c2d86d61aee4b6d56977/node /tmp/vscode-remote-containers-2f904d1fdea5807c90429bf29ff70a31f1382b89.js $*; }; f"
