@@ -126,6 +126,7 @@
 	ma = merge --abort
 	mc = merge --continue
 	ms = merge --skip
+	mnf = merge --no-ff
 	#############
 	o = checkout
 	om = checkout master
@@ -269,4 +270,4 @@
 	process = git-lfs filter-process
 	required = true
 [credential]
-	helper = "!f() { /home/vscode/.vscode-server/bin/dfd34e8260c270da74b5c2d86d61aee4b6d56977/node /tmp/vscode-remote-containers-2f904d1fdea5807c90429bf29ff70a31f1382b89.js $*; }; f"
+	helper = "!f() { /home/vscode/.vscode-server/bin/dfd34e8260c270da74b5c2d86d61aee4b6d56977/node /tmp/vscode-remote-containers-8de108236e69fd47f6a0c1447eb5535e2fcfaf99.js $*; }; f"
