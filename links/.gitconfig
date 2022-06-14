@@ -112,6 +112,10 @@
 	#############
 	g = grep -p
 	#############
+	i = switch
+	ic = switch -c
+	im = switch -m
+	#############
 	l = log --oneline -n 10
 	ls = log --oneline -n 10 --stat
 	ll = log --oneline
