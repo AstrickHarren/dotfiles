@@ -236,6 +236,9 @@
 	wr = show -p --no-color
 	ws = show --stat
 	#############
+    undo = reset HEAD~1 --mixed
+    sync = "!f() { git fetch --tags && git pull && git push; };f"
+	#############
 	svnr = svn rebase
 	svnd = svn dcommit
 	svnl = svn log --oneline --show-commit
