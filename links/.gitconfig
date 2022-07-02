@@ -116,12 +116,10 @@
 	ic = switch -c
 	im = switch -m
 	#############
-	l = log --oneline -n 10
-	ls = log --oneline -n 10 --stat
-	ll = log --oneline
+	l = log --oneline --graph --decorate -n 10
+	ls = log --oneline --graph --decorate -n 10 --stat
+	ll = log --graph --oneline --decorate
 	lls = log --oneline --stat
-	lg = log --oneline --graph --decorate
-	lgs = log --oneline --graph --decorate --stat
 	lgl = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	#############
 	lsf = !git ls-files | grep -i
@@ -191,7 +189,9 @@
 	rehh = "!f() { git reset --hard HEAD~$1; }; f"
 	remh = "!f() { git reset --mixed HEAD~$1; }; f"
 	resh = "!f() { git reset --soft HEAD~$1; }; f"
-	rehom = reset --hard origin/master
+	reho = git reset --hard origin $(git bc)
+	remo = git reset --mixed origin $(git bc)
+	reso = git reset --soft origin $(git bc)
 	#############
 	r = remote
 	ra = remote add
@@ -238,6 +238,7 @@
 	#############
     undo = reset HEAD~1 --mixed
     sync = "!f() { git fetch --tags && git pull && git push; };f"
+    fork = "!f() { git ll $1 $2 --not $(git merge-base $1 $2)^; };f"
 	#############
 	svnr = svn rebase
 	svnd = svn dcommit
