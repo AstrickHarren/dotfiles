@@ -189,9 +189,9 @@
 	rehh = "!f() { git reset --hard HEAD~$1; }; f"
 	remh = "!f() { git reset --mixed HEAD~$1; }; f"
 	resh = "!f() { git reset --soft HEAD~$1; }; f"
-	reho = git reset --hard origin $(git bc)
-	remo = git reset --mixed origin $(git bc)
-	reso = git reset --soft origin $(git bc)
+	reho = reset --hard origin $(git bc)
+	remo = reset --mixed origin $(git bc)
+	reso = reset --soft origin $(git bc)
 	#############
 	r = remote
 	ra = remote add
@@ -278,4 +278,4 @@
 	process = git-lfs filter-process
 	required = true
 [credential]
-	helper = "!f() { /home/vscode/.vscode-server/bin/dfd34e8260c270da74b5c2d86d61aee4b6d56977/node /tmp/vscode-remote-containers-8de108236e69fd47f6a0c1447eb5535e2fcfaf99.js $*; }; f"
+	helper = "!f() { /home/vscode/.vscode-server/bin/30d9c6cd9483b2cc586687151bcbcd635f373630/node /tmp/vscode-remote-containers-3e4f0655fcf243bc67914a0d864eb036ceeb04bd.js $*; }; f"
