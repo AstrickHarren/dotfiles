@@ -189,9 +189,9 @@
 	rehh = "!f() { git reset --hard HEAD~$1; }; f"
 	remh = "!f() { git reset --mixed HEAD~$1; }; f"
 	resh = "!f() { git reset --soft HEAD~$1; }; f"
-	reho = reset --hard origin $(git bc)
-	remo = reset --mixed origin $(git bc)
-	reso = reset --soft origin $(git bc)
+	reho = "!f() { git reset --hard origin/$(git bc); }; f"
+	remo = "!f() { git reset --mixed origin/$(git bc); }; f"
+	reso = "!f() { git reset --soft origin/$(git bc); }; f"
 	#############
 	r = remote
 	ra = remote add
